@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+SeqList	seqlist.h	/^typedef void SeqList;$/;"	t
+SeqListNode	seqlist.h	/^typedef void SeqListNode;$/;"	t
+SeqList_Catacity	seqlist.c	/^int SeqList_Catacity(SeqList* list) {$/;"	f
+SeqList_Clear	seqlist.c	/^void SeqList_Clear(SeqList* list) {$/;"	f
+SeqList_Create	seqlist.c	/^SeqList* SeqList_Create(int catacity) {$/;"	f
+SeqList_Delete	seqlist.c	/^SeqListNode* SeqList_Delete(SeqList* list, int pos) {$/;"	f
+SeqList_Destory	seqlist.c	/^void SeqList_Destory(SeqList* list) {$/;"	f
+SeqList_Get	seqlist.c	/^SeqListNode* SeqList_Get(SeqList* list, int pos) {$/;"	f
+SeqList_Insert	seqlist.c	/^int SeqList_Insert(SeqList* list, SeqListNode* node, int pos) {$/;"	f
+SeqList_Length	seqlist.c	/^int SeqList_Length(SeqList* list) {$/;"	f
+SeqStack	seqstack.h	/^typedef void SeqStack;$/;"	t
+SeqStack_Capacity	seqstack.c	/^int SeqStack_Capacity(SeqStack* stack){}$/;"	f
+SeqStack_Clear	seqstack.c	/^void SeqStack_Clear(SeqStack* stack){$/;"	f
+SeqStack_Create	seqstack.c	/^SeqStack* SeqStack_Create(int capacity){$/;"	f
+SeqStack_Destroy	seqstack.c	/^void SeqStack_Destroy(SeqStack* stack){$/;"	f
+SeqStack_Pop	seqstack.c	/^void* SeqStack_Pop(SeqStack* stack){}$/;"	f
+SeqStack_Push	seqstack.c	/^int SeqStack_Push(SeqStack* stack, void* item){}$/;"	f
+SeqStack_Size	seqstack.c	/^int SeqStack_Size(SeqStack* stack){}$/;"	f
+SeqStack_Top	seqstack.c	/^void* SeqStack_Top(SeqStack* stack){}$/;"	f
+TSeqList	seqlist.c	/^} TSeqList;$/;"	t	typeref:struct:_SeqList	file:
+TSeqListNode	seqlist.c	/^typedef unsigned int TSeqListNode;$/;"	t	file:
+_SEQLIST_H_	seqlist.h	2;"	d
+_SEQSTACK_H_	seqstack.h	3;"	d
+_SeqList	seqlist.c	/^typedef struct _SeqList {$/;"	s	file:
+catacity	seqlist.c	/^    int catacity;$/;"	m	struct:_SeqList	file:
+length	seqlist.c	/^    int length;$/;"	m	struct:_SeqList	file:
+node	seqlist.c	/^    TSeqListNode* node;$/;"	m	struct:_SeqList	file:

@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+AVAILABLE	staticlist.c	6;"	d	file:
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -Wall -std=c99 -g $/;"	m
+ListNode	test.c	/^typedef void ListNode;$/;"	t	file:
+OBJS	Makefile	/^OBJS = main.o staticlist.o$/;"	m
+StaticList	staticlist.h	/^typedef void StaticList;$/;"	t
+StaticListNode	staticlist.h	/^typedef void StaticListNode;$/;"	t
+StaticList_Catacity	staticlist.c	/^int StaticList_Catacity(StaticList* list) {$/;"	f
+StaticList_Create	staticlist.c	/^StaticList* StaticList_Create(int catacity) {$/;"	f
+StaticList_Delete	staticlist.c	/^int StaticList_Delete(StaticList* list, int pos) {$/;"	f
+StaticList_Get	staticlist.c	/^StaticListNode* StaticList_Get(StaticList* list, int pos) {$/;"	f
+StaticList_Insert	staticlist.c	/^int StaticList_Insert(StaticList* list, StaticListNode* node, int pos) {$/;"	f
+StaticList_Szie	staticlist.c	/^int StaticList_Szie(StaticList* list) {$/;"	f
+TStaticList	staticlist.c	/^} TStaticList;$/;"	t	typeref:struct:_tag_StaticList	file:
+TStaticListNode	staticlist.c	/^} TStaticListNode;$/;"	t	typeref:struct:_tag_StaticListNode	file:
+_STATICLIST_H_	staticlist.h	2;"	d
+_tag_StaticList	staticlist.c	/^typedef struct _tag_StaticList {$/;"	s	file:
+_tag_StaticListNode	staticlist.c	/^typedef struct _tag_StaticListNode {$/;"	s	file:
+catacity	staticlist.c	/^    int catacity;$/;"	m	struct:_tag_StaticList	file:
+clear	staticlist.c	/^void clear(StaticList* list) {$/;"	f
+data	staticlist.c	/^    int data;$/;"	m	struct:_tag_StaticListNode	file:
+disdroy	staticlist.c	/^void disdroy(StaticList* list) {$/;"	f
+f	test.c	/^void f(ListNode* node){$/;"	f
+header	staticlist.c	/^    TStaticListNode header;$/;"	m	struct:_tag_StaticList	file:
+main	main.c	/^int main() {$/;"	f
+main	test.c	/^int main() {$/;"	f
+next	staticlist.c	/^    int next;$/;"	m	struct:_tag_StaticListNode	file:
+node	staticlist.c	/^    TStaticListNode node[];$/;"	m	struct:_tag_StaticList	file:

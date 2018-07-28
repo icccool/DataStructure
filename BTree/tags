@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+BTPos	BTree.h	/^typedef unsigned long long BTPos;$/;"	t
+BT_LEFT	BTree.h	4;"	d
+BT_RIGHT	BTree.h	5;"	d
+BTree	BTree.h	/^typedef void BTree;$/;"	t
+BTreeNode	BTree.h	/^typedef struct _tag_BTreeNode BTreeNode;$/;"	t	typeref:struct:_tag_BTreeNode
+BTree_Clear	BTree.c	/^void BTree_Clear(BTree* tree) {$/;"	f
+BTree_Count	BTree.c	/^int BTree_Count(BTree* tree) {$/;"	f
+BTree_Create	BTree.c	/^BTree* BTree_Create() {$/;"	f
+BTree_Degree	BTree.c	/^int BTree_Degree(BTree* tree) {$/;"	f
+BTree_Delete	BTree.c	/^BTreeNode* BTree_Delete(BTree* tree, BTPos pos, int count) {$/;"	f
+BTree_Destroy	BTree.c	/^void BTree_Destroy(BTree* tree) {$/;"	f
+BTree_Display	BTree.c	/^void BTree_Display(BTree* tree, BTree_Printf* pFunc, int gap, char div) {$/;"	f
+BTree_Get	BTree.c	/^BTreeNode* BTree_Get(BTree* tree, BTPos pos, int count) {$/;"	f
+BTree_Height	BTree.c	/^int BTree_Height(BTree* tree) {$/;"	f
+BTree_Insert	BTree.c	/^int BTree_Insert(BTree* tree, BTreeNode* node, BTPos pos, int count, int flag) {$/;"	f
+BTree_Printf	BTree.h	/^typedef void (BTree_Printf)(BTreeNode*);$/;"	t
+BTree_Root	BTree.c	/^BTreeNode* BTree_Root(BTree* tree) {$/;"	f
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g -c$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -g -o$/;"	m
+LinkList	linklist.h	/^typedef void LinkList;$/;"	t
+LinkListNode	linklist.h	/^typedef struct _tag_LinkListNode LinkListNode;$/;"	t	typeref:struct:_tag_LinkListNode
+LinkList_Clear	linklist.c	/^void LinkList_Clear(LinkList* list) {$/;"	f
+LinkList_Create	linklist.c	/^LinkList* LinkList_Create() {$/;"	f
+LinkList_Delete	linklist.c	/^LinkListNode* LinkList_Delete(LinkList* list, int pos) {$/;"	f
+LinkList_Destroy	linklist.c	/^void LinkList_Destroy(LinkList* list) {$/;"	f
+LinkList_Get	linklist.c	/^LinkListNode* LinkList_Get(LinkList* list, int pos) {$/;"	f
+LinkList_Insert	linklist.c	/^int LinkList_Insert(LinkList* list, LinkListNode* node, int pos) {$/;"	f
+LinkList_Length	linklist.c	/^int LinkList_Length(LinkList* list) {$/;"	f
+LinkQueue	linkqueue.h	/^typedef void LinkQueue;$/;"	t
+LinkQueue_Append	linkqueue.c	/^int LinkQueue_Append(LinkQueue* queue, void* item) {$/;"	f
+LinkQueue_Clear	linkqueue.c	/^void LinkQueue_Clear(LinkQueue* queue) {$/;"	f
+LinkQueue_Create	linkqueue.c	/^LinkQueue* LinkQueue_Create() {$/;"	f
+LinkQueue_Destroy	linkqueue.c	/^void LinkQueue_Destroy(LinkQueue* queue) {$/;"	f
+LinkQueue_Header	linkqueue.c	/^void* LinkQueue_Header(LinkQueue* queue) {$/;"	f
+LinkQueue_Length	linkqueue.c	/^int LinkQueue_Length(LinkQueue* queue) {$/;"	f
+LinkQueue_Retrieve	linkqueue.c	/^void* LinkQueue_Retrieve(LinkQueue* queue) {$/;"	f
+Node	main.c	/^typedef struct _tag_Node Node;$/;"	t	typeref:struct:_tag_Node	file:
+OBJS	Makefile	/^OBJS = BTree.o linkqueue.o linklist.o main.o $/;"	m
+TBTree	BTree.c	/^typedef struct _tag_BTree TBTree;$/;"	t	typeref:struct:_tag_BTree	file:
+TLinkList	linklist.c	/^} TLinkList;$/;"	t	typeref:struct:_tag_LinkList	file:
+TQueueNode	linkqueue.c	/^} TQueueNode;$/;"	t	typeref:struct:_tag_QueueNode	file:
+_BTREE_H_	BTree.h	2;"	d
+_LINKLIST_H_	linklist.h	2;"	d
+_LINKQUEUE_H_	linkqueue.h	2;"	d
+_tag_BTree	BTree.c	/^struct _tag_BTree {$/;"	s	file:
+_tag_BTreeNode	BTree.h	/^struct _tag_BTreeNode {$/;"	s
+_tag_LinkList	linklist.c	/^typedef struct _tag_LinkList {$/;"	s	file:
+_tag_LinkListNode	linklist.h	/^struct _tag_LinkListNode{$/;"	s
+_tag_Node	main.c	/^struct _tag_Node {$/;"	s	file:
+_tag_QueueNode	linkqueue.c	/^typedef struct _tag_QueueNode {$/;"	s	file:
+count	BTree.c	/^    int count;$/;"	m	struct:_tag_BTree	file:
+data	main.c	/^    char data;$/;"	m	struct:_tag_Node	file:
+header	linklist.c	/^    LinkListNode header;$/;"	m	struct:_tag_LinkList	file:
+item	linkqueue.c	/^    void* item;$/;"	m	struct:_tag_QueueNode	file:
+left	BTree.h	/^    BTreeNode* left;$/;"	m	struct:_tag_BTreeNode
+length	linklist.c	/^    int length;$/;"	m	struct:_tag_LinkList	file:
+level_order_traversal	main.c	/^void level_order_traversal(BTreeNode* root){$/;"	f
+main	main.c	/^int main() {$/;"	f
+next	linklist.h	/^	LinkListNode* next;$/;"	m	struct:_tag_LinkListNode
+node	linkqueue.c	/^    LinkListNode node;$/;"	m	struct:_tag_QueueNode	file:
+node	main.c	/^    BTreeNode node;$/;"	m	struct:_tag_Node	file:
+printf_data	main.c	/^void printf_data(BTreeNode* node) {$/;"	f
+recursive_count	BTree.c	/^static int recursive_count(BTreeNode* node) {$/;"	f	file:
+recursive_degree	BTree.c	/^static int recursive_degree(BTreeNode* node) {$/;"	f	file:
+recursive_display	BTree.c	/^static void recursive_display(BTreeNode* node, BTree_Printf pFunc, int fmt, int gap, int div) {$/;"	f	file:
+recursive_height	BTree.c	/^static int recursive_height(BTreeNode* node) {$/;"	f	file:
+right	BTree.h	/^    BTreeNode* right;$/;"	m	struct:_tag_BTreeNode
+root	BTree.c	/^    BTreeNode *root;$/;"	m	struct:_tag_BTree	file:

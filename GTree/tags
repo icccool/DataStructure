@@ -1,0 +1,49 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g -c$/;"	m
+GTree	GTree.h	/^typedef void GTree;$/;"	t
+GTreeData	GTree.h	/^typedef void GTreeData;$/;"	t
+GTreeNode	GTree.c	/^typedef struct _tag_GTreeNode GTreeNode;$/;"	t	typeref:struct:_tag_GTreeNode	file:
+GTree_Clear	GTree.c	/^void GTree_Clear(GTree* tree) {$/;"	f
+GTree_Count	GTree.c	/^int GTree_Count(GTree* tree) {$/;"	f
+GTree_Create	GTree.c	/^GTree* GTree_Create() {$/;"	f
+GTree_Degree	GTree.c	/^int GTree_Degree(GTree* tree) {$/;"	f
+GTree_Delete	GTree.c	/^GTreeData* GTree_Delete(GTree* tree, int pos) {$/;"	f
+GTree_Destroy	GTree.c	/^void GTree_Destroy(GTree* tree) {$/;"	f
+GTree_Display	GTree.c	/^void GTree_Display(GTree* tree, GTree_Printf* pFunc, int gap, char div) {$/;"	f
+GTree_Get	GTree.c	/^GTreeData* GTree_Get(GTree* tree, int pos) {$/;"	f
+GTree_Height	GTree.c	/^int GTree_Height(GTree* tree) {$/;"	f
+GTree_Insert	GTree.c	/^int GTree_Insert(GTree* tree, GTreeData* data, int pPos) {$/;"	f
+GTree_Printf	GTree.h	/^typedef void (GTree_Printf)(GTreeData*);$/;"	t
+GTree_Root	GTree.c	/^GTreeData* GTree_Root(GTree* tree) {$/;"	f
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -g -o$/;"	m
+LinkList	LinkList.h	/^typedef void LinkList;$/;"	t
+LinkListNode	LinkList.h	/^typedef struct _tag_LinkListNode LinkListNode;$/;"	t	typeref:struct:_tag_LinkListNode
+LinkList_Clear	LinkList.c	/^void LinkList_Clear(LinkList* list) {$/;"	f
+LinkList_Create	LinkList.c	/^LinkList* LinkList_Create() {$/;"	f
+LinkList_Delete	LinkList.c	/^LinkListNode* LinkList_Delete(LinkList* list, int pos) {$/;"	f
+LinkList_Destroy	LinkList.c	/^void LinkList_Destroy(LinkList* list) {$/;"	f
+LinkList_Get	LinkList.c	/^LinkListNode* LinkList_Get(LinkList* list, int pos) {$/;"	f
+LinkList_Insert	LinkList.c	/^int LinkList_Insert(LinkList* list, LinkListNode* node, int pos) {$/;"	f
+LinkList_Length	LinkList.c	/^int LinkList_Length(LinkList* list) {$/;"	f
+OBJS	Makefile	/^OBJS = linklist.o main.o$/;"	m
+TLNode	GTree.c	/^typedef struct _tag_TLNode TLNode;$/;"	t	typeref:struct:_tag_TLNode	file:
+TLinkList	LinkList.c	/^} TLinkList;$/;"	t	typeref:struct:_tag_LinkList	file:
+_GTREE_H_	GTree.h	2;"	d
+_LINKLIST_H_	LinkList.h	2;"	d
+_tag_GTreeNode	GTree.c	/^struct _tag_GTreeNode {$/;"	s	file:
+_tag_LinkList	LinkList.c	/^typedef struct _tag_LinkList {$/;"	s	file:
+_tag_LinkListNode	LinkList.h	/^struct _tag_LinkListNode{$/;"	s
+_tag_TLNode	GTree.c	/^struct _tag_TLNode {$/;"	s	file:
+child	GTree.c	/^    LinkList* child;$/;"	m	struct:_tag_GTreeNode	file:
+data	GTree.c	/^    GTreeData* data;$/;"	m	struct:_tag_GTreeNode	file:
+header	GTree.c	/^    LinkListNode header;$/;"	m	struct:_tag_TLNode	file:
+header	LinkList.c	/^    LinkListNode header;$/;"	m	struct:_tag_LinkList	file:
+length	LinkList.c	/^    int length;$/;"	m	struct:_tag_LinkList	file:
+next	LinkList.h	/^	LinkListNode* next;$/;"	m	struct:_tag_LinkListNode
+parent	GTree.c	/^    GTreeNode* parent;$/;"	m	struct:_tag_GTreeNode	file:

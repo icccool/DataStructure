@@ -1,0 +1,35 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g$/;"	m
+CircleList	circlelist.h	/^typedef void CircleList;$/;"	t
+CircleListNode	circlelist.h	/^typedef struct _tag_CircleListNode CircleListNode;$/;"	t	typeref:struct:_tag_CircleListNode
+CircleList_Clear	circlelist.c	/^void CircleList_Clear(CircleList* list) {$/;"	f
+CircleList_Create	circlelist.c	/^CircleList* CircleList_Create() {$/;"	f
+CircleList_Current	circlelist.c	/^CircleListNode* CircleList_Current(CircleList* list) {$/;"	f
+CircleList_Delete	circlelist.c	/^CircleListNode* CircleList_Delete(CircleList* list, int pos) {$/;"	f
+CircleList_DeleteNode	circlelist.c	/^CircleListNode* CircleList_DeleteNode(CircleList* list, CircleListNode* node) {$/;"	f
+CircleList_Destroy	circlelist.c	/^void CircleList_Destroy(CircleList* list) {$/;"	f
+CircleList_Get	circlelist.c	/^CircleListNode* CircleList_Get(CircleList* list, int pos) {$/;"	f
+CircleList_Insert	circlelist.c	/^int CircleList_Insert(CircleList* list, CircleListNode* node, int pos) {$/;"	f
+CircleList_Length	circlelist.c	/^int CircleList_Length(CircleList* list) {$/;"	f
+CircleList_Next	circlelist.c	/^CircleListNode* CircleList_Next(CircleList* list) {$/;"	f
+CircleList_Reset	circlelist.c	/^CircleListNode* CircleList_Reset(CircleList* list) {$/;"	f
+GCC	Makefile	/^GCC = gcc$/;"	m
+Node	main.c	/^}Node;$/;"	t	typeref:struct:_tag_Node	file:
+OBJS	Makefile	/^OBJS = circlelist.o main.o$/;"	m
+TCircleList	circlelist.c	/^}TCircleList;$/;"	t	typeref:struct:_tag_CircleList	file:
+_CIRCLELIST_H_	circlelist.h	2;"	d
+_tag_CircleList	circlelist.c	/^typedef struct _tag_CircleList {$/;"	s	file:
+_tag_CircleListNode	circlelist.h	/^struct _tag_CircleListNode {$/;"	s
+_tag_Node	main.c	/^typedef struct _tag_Node{$/;"	s	file:
+data	main.c	/^	int data;$/;"	m	struct:_tag_Node	file:
+header	circlelist.c	/^    CircleListNode header;$/;"	m	struct:_tag_CircleList	file:
+length	circlelist.c	/^    int length;$/;"	m	struct:_tag_CircleList	file:
+main	main.c	/^int main() {$/;"	f
+next	circlelist.h	/^    CircleListNode* next;$/;"	m	struct:_tag_CircleListNode
+node	main.c	/^	CircleListNode node;$/;"	m	struct:_tag_Node	file:
+silder	circlelist.c	/^    CircleListNode* silder;$/;"	m	struct:_tag_CircleList	file:

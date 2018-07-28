@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g -c$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -g -o$/;"	m
+LinkList	linklist.h	/^typedef void LinkList;$/;"	t
+LinkListNode	linklist.h	/^typedef struct _tag_LinkListNode LinkListNode;$/;"	t	typeref:struct:_tag_LinkListNode
+LinkList_Clear	linklist.c	/^void LinkList_Clear(LinkList* list) {$/;"	f
+LinkList_Create	linklist.c	/^LinkList* LinkList_Create() {$/;"	f
+LinkList_Delete	linklist.c	/^LinkListNode* LinkList_Delete(LinkList* list, int pos) {$/;"	f
+LinkList_Destory	linklist.c	/^void LinkList_Destory(LinkList* list) {$/;"	f
+LinkList_Get	linklist.c	/^LinkListNode* LinkList_Get(LinkList* list, int pos) {$/;"	f
+LinkList_Insert	linklist.c	/^int LinkList_Insert(LinkList* list, LinkListNode* node, int pos) {$/;"	f
+LinkList_Length	linklist.c	/^int LinkList_Length(LinkList* list) {$/;"	f
+LinkQueue	linkqueue.h	/^typedef void LinkQueue;$/;"	t
+LinkQueue_Append	linkqueue.c	/^int LinkQueue_Append(LinkQueue* queue, void* item) {$/;"	f
+LinkQueue_Clear	linkqueue.c	/^void LinkQueue_Clear(LinkQueue* queue) {$/;"	f
+LinkQueue_Create	linkqueue.c	/^LinkQueue* LinkQueue_Create() {$/;"	f
+LinkQueue_Destroy	linkqueue.c	/^void LinkQueue_Destroy(LinkQueue* queue) {$/;"	f
+LinkQueue_Header	linkqueue.c	/^void* LinkQueue_Header(LinkQueue* queue) {$/;"	f
+LinkQueue_Length	linkqueue.c	/^int LinkQueue_Length(LinkQueue* queue) {$/;"	f
+LinkQueue_Retrieve	linkqueue.c	/^void* LinkQueue_Retrieve(LinkQueue* queue) {$/;"	f
+OBJS	Makefile	/^OBJS = seqlist.o seqstack.o main.o$/;"	m
+TLinkList	linklist.c	/^} TLinkList;$/;"	t	typeref:struct:_tag_LinkList	file:
+TQueueNode	linkqueue.c	/^} TQueueNode;$/;"	t	typeref:struct:_tag_QueueNode	file:
+_LINKLIST_H_	linklist.h	2;"	d
+_LINKQUEUE_H_	linkqueue.h	2;"	d
+_tag_LinkList	linklist.c	/^typedef struct _tag_LinkList {$/;"	s	file:
+_tag_LinkListNode	linklist.h	/^struct _tag_LinkListNode{$/;"	s
+_tag_QueueNode	linkqueue.c	/^typedef struct _tag_QueueNode {$/;"	s	file:
+header	linklist.c	/^    LinkListNode header;$/;"	m	struct:_tag_LinkList	file:
+item	linkqueue.c	/^    void* item;$/;"	m	struct:_tag_QueueNode	file:
+length	linklist.c	/^    int length;$/;"	m	struct:_tag_LinkList	file:
+next	linklist.h	/^	LinkListNode* next;$/;"	m	struct:_tag_LinkListNode
+node	linkqueue.c	/^    LinkListNode node;$/;"	m	struct:_tag_QueueNode	file:

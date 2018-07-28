@@ -1,0 +1,31 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g -c$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -g -o$/;"	m
+MGraph	MGraph.h	/^typedef void MGraph;$/;"	t
+MGraph_AddEdge	MGraph.c	/^int MGraph_AddEdge(MGraph* graph, int v1, int v2, int w) {$/;"	f
+MGraph_BFS	MGraph.c	/^void MGraph_BFS(MGraph* graph, int v, MGraph_Printf* pFunc) {$/;"	f
+MGraph_Clear	MGraph.c	/^void MGraph_Clear(MGraph* graph) {$/;"	f
+MGraph_Create	MGraph.c	/^MGraph* MGraph_Create(MVertex** v, int n) {$/;"	f
+MGraph_DFS	MGraph.c	/^void MGraph_DFS(MGraph* graph, int v, MGraph_Printf* pFunc) {$/;"	f
+MGraph_Destroy	MGraph.c	/^void MGraph_Destroy(MGraph* graph) {$/;"	f
+MGraph_Display	MGraph.c	/^void MGraph_Display(MGraph* graph, MGraph_Printf* pFunc) {$/;"	f
+MGraph_EdgeCount	MGraph.c	/^int MGraph_EdgeCount(MGraph* graph) {$/;"	f
+MGraph_GetEdge	MGraph.c	/^int MGraph_GetEdge(MGraph* graph, int v1, int v2) {$/;"	f
+MGraph_Printf	MGraph.h	/^typedef void (MGraph_Printf)(MVertex*);$/;"	t
+MGraph_RemoveEdge	MGraph.c	/^int MGraph_RemoveEdge(MGraph* graph, int v1, int v2) {$/;"	f
+MGraph_TD	MGraph.c	/^int MGraph_TD(MGraph* graph, int v) {$/;"	f
+MGraph_VertexCount	MGraph.c	/^int MGraph_VertexCount(MGraph* graph) {$/;"	f
+MVertex	MGraph.h	/^typedef void MVertex;$/;"	t
+OBJS	Makefile	/^OBJS = MGraph.o main.o$/;"	m
+TMGraph	MGraph.c	/^} TMGraph;$/;"	t	typeref:struct:_tag_MGraph	file:
+_MGRAPH_H_	MGraph.h	2;"	d
+_tag_MGraph	MGraph.c	/^typedef struct _tag_MGraph {$/;"	s	file:
+count	MGraph.c	/^    int count;$/;"	m	struct:_tag_MGraph	file:
+main	main.c	/^int main() {$/;"	f
+matrix	MGraph.c	/^    int** matrix;$/;"	m	struct:_tag_MGraph	file:
+v	MGraph.c	/^    MVertex** v;$/;"	m	struct:_tag_MGraph	file:

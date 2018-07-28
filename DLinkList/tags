@@ -1,0 +1,39 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -O2 -g -c$/;"	m
+DLinkList	DLinkList.h	/^typedef void DLinkList;$/;"	t
+DLinkListNode	DLinkList.h	/^typedef struct _tag_DLinkListNode DLinkListNode;$/;"	t	typeref:struct:_tag_DLinkListNode
+DLinkList_Clear	DLinkList.c	/^void DLinkList_Clear(DLinkList* list) {$/;"	f
+DLinkList_Create	DLinkList.c	/^DLinkList* DLinkList_Create() {$/;"	f
+DLinkList_Current	DLinkList.c	/^DLinkListNode* DLinkList_Current(DLinkList* list) {$/;"	f
+DLinkList_Delete	DLinkList.c	/^DLinkListNode* DLinkList_Delete(DLinkList* list, int pos) {$/;"	f
+DLinkList_DeleteNode	DLinkList.c	/^DLinkListNode* DLinkList_DeleteNode(DLinkList* list, DLinkListNode* node) {$/;"	f
+DLinkList_Destroy	DLinkList.c	/^void DLinkList_Destroy(DLinkList* list) {$/;"	f
+DLinkList_Get	DLinkList.c	/^DLinkListNode* DLinkList_Get(DLinkList* list, int pos) {$/;"	f
+DLinkList_Insert	DLinkList.c	/^int DLinkList_Insert(DLinkList* list, DLinkListNode* node, int pos) {$/;"	f
+DLinkList_IsEmpty	DLinkList.c	/^int DLinkList_IsEmpty(DLinkList* list) {$/;"	f
+DLinkList_Length	DLinkList.c	/^int DLinkList_Length(DLinkList* list) {$/;"	f
+DLinkList_Next	DLinkList.c	/^DLinkListNode* DLinkList_Next(DLinkList* list) {$/;"	f
+DLinkList_Pre	DLinkList.c	/^DLinkListNode* DLinkList_Pre(DLinkList* list) {$/;"	f
+DLinkList_Reset	DLinkList.c	/^DLinkListNode* DLinkList_Reset(DLinkList* list) {$/;"	f
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -O2 -g -o$/;"	m
+Node	Main.c	/^}Node;$/;"	t	typeref:struct:_tag_Node	file:
+OBJS	Makefile	/^OBJS = DLinkList.o Main.o$/;"	m
+TDLinkList	DLinkList.c	/^}TDLinkList;$/;"	t	typeref:struct:_tag_DLinkList	file:
+_DLINKLIST_H_	DLinkList.h	2;"	d
+_tag_DLinkList	DLinkList.c	/^typedef struct _tag_DLinkList {$/;"	s	file:
+_tag_DLinkListNode	DLinkList.h	/^struct _tag_DLinkListNode {$/;"	s
+_tag_Node	Main.c	/^typedef struct _tag_Node {$/;"	s	file:
+header	DLinkList.c	/^    DLinkListNode header;$/;"	m	struct:_tag_DLinkList	file:
+length	DLinkList.c	/^    int length;$/;"	m	struct:_tag_DLinkList	file:
+main	Main.c	/^int main() {$/;"	f
+next	DLinkList.h	/^    DLinkListNode* next;$/;"	m	struct:_tag_DLinkListNode
+node	Main.c	/^    DLinkListNode node;$/;"	m	struct:_tag_Node	file:
+pre	DLinkList.h	/^    DLinkListNode* pre;$/;"	m	struct:_tag_DLinkListNode
+slider	DLinkList.c	/^    DLinkListNode* slider;$/;"	m	struct:_tag_DLinkList	file:
+value	Main.c	/^    int value;$/;"	m	struct:_tag_Node	file:

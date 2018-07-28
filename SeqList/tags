@@ -1,0 +1,27 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CFLAGS	Makefile	/^CFLAGS = -Wall$/;"	m
+OBJS	Makefile	/^OBJS = seqmain.o seqlist.o $/;"	m
+STD	Makefile	/^STD = -std=c99$/;"	m
+SeqList	seqlist.h	/^typedef void SeqList;$/;"	t
+SeqListNode	seqlist.h	/^typedef void SeqListNode;$/;"	t
+SeqList_Catacity	seqlist.c	/^int SeqList_Catacity(SeqList* list) {$/;"	f
+SeqList_Clear	seqlist.c	/^void SeqList_Clear(SeqList* list) {$/;"	f
+SeqList_Create	seqlist.c	/^SeqList* SeqList_Create(int catacity) {$/;"	f
+SeqList_Delete	seqlist.c	/^SeqListNode* SeqList_Delete(SeqList* list, int pos) {$/;"	f
+SeqList_Destory	seqlist.c	/^void SeqList_Destory(SeqList* list) {$/;"	f
+SeqList_Get	seqlist.c	/^SeqListNode* SeqList_Get(SeqList* list, int pos) {$/;"	f
+SeqList_Insert	seqlist.c	/^int SeqList_Insert(SeqList* list, SeqListNode* node, int pos) {$/;"	f
+SeqList_Length	seqlist.c	/^int SeqList_Length(SeqList* list) {$/;"	f
+TSeqList	seqlist.c	/^} TSeqList;$/;"	t	typeref:struct:_SeqList	file:
+TSeqListNode	seqlist.c	/^typedef unsigned int TSeqListNode;$/;"	t	file:
+_SEQLIST_H_	seqlist.h	2;"	d
+_SeqList	seqlist.c	/^typedef struct _SeqList {$/;"	s	file:
+catacity	seqlist.c	/^    int catacity;$/;"	m	struct:_SeqList	file:
+length	seqlist.c	/^    int length;$/;"	m	struct:_SeqList	file:
+main	seqmain.c	/^int main(){$/;"	f
+node	seqlist.c	/^    TSeqListNode* node;$/;"	m	struct:_SeqList	file:

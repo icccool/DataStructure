@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -Wall -std=c99 -g -c$/;"	m
+LDFLAGS	Makefile	/^LDFLAGS = -Wall -std=c99 -g -o$/;"	m
+OBJS	Makefile	/^OBJS = seqqueue.o main.o$/;"	m
+SeqQueue	seqqueue.h	/^typedef void SeqQueue;$/;"	t
+SeqQueue_Append	seqqueue.c	/^int SeqQueue_Append(SeqQueue* queue, void* item) {$/;"	f
+SeqQueue_Capacity	seqqueue.c	/^int SeqQueue_Capacity(SeqQueue* queue) {$/;"	f
+SeqQueue_Clear	seqqueue.c	/^void SeqQueue_Clear(SeqQueue* queue) {$/;"	f
+SeqQueue_Create	seqqueue.c	/^SeqQueue* SeqQueue_Create(int capacity) {$/;"	f
+SeqQueue_Destroy	seqqueue.c	/^void SeqQueue_Destroy(SeqQueue* queue) {$/;"	f
+SeqQueue_Header	seqqueue.c	/^void* SeqQueue_Header(SeqQueue* queue) {$/;"	f
+SeqQueue_Length	seqqueue.c	/^int SeqQueue_Length(SeqQueue* queue) {$/;"	f
+SeqQueue_Retrieve	seqqueue.c	/^void* SeqQueue_Retrieve(SeqQueue* queue) {$/;"	f
+TSeqQueue	seqqueue.c	/^} TSeqQueue;$/;"	t	typeref:struct:_tag_SeqQueue	file:
+TSeqQueueNode	seqqueue.c	/^typedef int TSeqQueueNode;$/;"	t	file:
+_SEQQUEUE_H_	seqqueue.h	2;"	d
+_tag_SeqQueue	seqqueue.c	/^typedef struct _tag_SeqQueue {$/;"	s	file:
+capacity	seqqueue.c	/^    int capacity;$/;"	m	struct:_tag_SeqQueue	file:
+header	seqqueue.c	/^    int header;$/;"	m	struct:_tag_SeqQueue	file:
+main	main.c	/^int main() {$/;"	f
+node	seqqueue.c	/^    TSeqQueueNode* node;$/;"	m	struct:_tag_SeqQueue	file:
+rear	seqqueue.c	/^    int rear;$/;"	m	struct:_tag_SeqQueue	file:
